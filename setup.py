@@ -4,7 +4,8 @@ here = (os.path.abspath(os.path.dirname(__file__)))
 src = os.path.join(here, "src")
 sys.path.append(src)
 
-from stay import load
+from stay import Decoder
+load = Decoder()
 from setuptools import setup, find_packages
 
 with open("META.stay") as f:
